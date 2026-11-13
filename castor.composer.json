@@ -1,11 +1,11 @@
 {
     "require": {
-        "open-colibri/starter-core": "@dev",
-        "open-colibri/starter-datasets": "@dev",
-        "open-colibri/starter-import": "@dev",
-        "open-colibri/starter-menu": "@dev",
-        "open-colibri/starter-plugins": "@dev",
-        "open-colibri/starter-themes": "@dev",
-        "open-colibri/starter-upsun": "@dev"
+        "opencolibri/starter-core": "@dev",
+        "opencolibri/starter-datasets": "@dev",
+        "opencolibri/starter-import": "@dev",
+        "opencolibri/starter-menu": "@dev",
+        "opencolibri/starter-plugins": "@dev",
+        "opencolibri/starter-themes": "@dev",
+        "opencolibri/starter-upsun": "@dev"
     }
 }

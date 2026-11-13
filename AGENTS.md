@@ -1,7 +1,7 @@
 # Agent guidance
 
 This is a [Sylius](https://sylius.com) project driven by [Castor](https://castor.jolicode.com) and
-[Colibri Starter](https://github.com/open-colibri/colibri-starter). If `castor.php` registers no Sylius service yet,
+[Colibri Starter](https://github.com/opencolibri/colibri-starter). If `castor.php` registers no Sylius service yet,
 the project is still a skeleton: run `castor sylius:init` first.
 
 ## Layout

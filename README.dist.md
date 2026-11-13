@@ -1,6 +1,6 @@
 # My Sylius store
 
-A [Sylius](https://sylius.com) store bootstrapped with [Colibri Starter](https://github.com/open-colibri/colibri-starter).
+A [Sylius](https://sylius.com) store bootstrapped with [Colibri Starter](https://github.com/opencolibri/colibri-starter).
 
 ## Requirements
 
@@ -46,7 +46,7 @@ The Sylius application lives in [`app/`](app/), the stack is described in [`cast
 | `castor sylius:import:*`                     | Import a catalog (AI generated or from a site)   |
 | `castor sylius:upsun:check`                  | Check the Upsun deployment configuration         |
 
-See the [Colibri Starter documentation](https://open-colibri.github.io/starter/docs/)
+See the [Colibri Starter documentation](https://opencolibri.github.io/starter/docs/)
 for every option.
 
 ## Quality
