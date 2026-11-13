@@ -7,7 +7,7 @@
  * skeleton-only files, once the application is installed.
  */
 
-namespace sylius_starter\init;
+namespace colibri_starter\init;
 
 use Castor\Attribute\AsRawTokens;
 use Castor\Attribute\AsTask;
@@ -25,7 +25,7 @@ use function qa\find_sylius_service;
 #[AsTask(name: 'init', namespace: 'sylius', description: 'Create a new Sylius application from this skeleton', ignoreValidationErrors: true)]
 function init(#[AsRawTokens] array $options = []): void
 {
-    io()->title('Sylius Starter');
+    io()->title('Colibri Starter');
 
     if (null !== find_sylius_service()) {
         io()->error('A Sylius application is already registered in castor.php.');

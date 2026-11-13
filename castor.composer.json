@@ -1,11 +1,11 @@
 {
     "require": {
-        "sylius-starter/core": "@dev",
-        "sylius-starter/datasets": "@dev",
-        "sylius-starter/import": "@dev",
-        "sylius-starter/menu": "@dev",
-        "sylius-starter/plugins": "@dev",
-        "sylius-starter/themes": "@dev",
-        "sylius-starter/upsun": "@dev"
+        "open-colibri/starter-core": "@dev",
+        "open-colibri/starter-datasets": "@dev",
+        "open-colibri/starter-import": "@dev",
+        "open-colibri/starter-menu": "@dev",
+        "open-colibri/starter-plugins": "@dev",
+        "open-colibri/starter-themes": "@dev",
+        "open-colibri/starter-upsun": "@dev"
     }
 }

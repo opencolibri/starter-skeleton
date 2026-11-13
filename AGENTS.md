@@ -1,7 +1,7 @@
 # Agent guidance
 
 This is a [Sylius](https://sylius.com) project driven by [Castor](https://castor.jolicode.com) and
-[Sylius Starter](https://github.com/sylius-starter/sylius-starter). If `castor.php` registers no Sylius service yet,
+[Colibri Starter](https://github.com/open-colibri/colibri-starter). If `castor.php` registers no Sylius service yet,
 the project is still a skeleton: run `castor sylius:init` first.
 
 ## Layout
@@ -24,7 +24,7 @@ castor app:db:migrate                     # database migrations
 castor list                               # every task
 ```
 
-## Prefer the Sylius Starter tasks
+## Prefer the Colibri Starter tasks
 
 To add or remove a plugin or a theme, or hide admin menu items, use the `castor sylius:*` tasks instead of
 editing the application by hand: they install, configure, migrate and clean up in one deterministic step.

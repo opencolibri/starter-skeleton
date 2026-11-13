@@ -10,7 +10,7 @@ namespace qa;
 use Castor\Attribute\AsOption;
 use Castor\Attribute\AsRawTokens;
 use Castor\Attribute\AsTask;
-use SyliusStarter\Core\Service\SyliusService;
+use OpenColibri\Starter\Core\Service\SyliusService;
 
 use function Castor\Docker\collect_services;
 use function Castor\Docker\docker_exit_code;
