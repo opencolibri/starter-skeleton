@@ -2,7 +2,7 @@
 
 Start a new [Sylius](https://sylius.com) project, ready to develop, in one command.
 
-The skeleton is a thin shell around [Colibri Starter](https://github.com/open-colibri/colibri-starter):
+The skeleton is a thin shell around [Colibri Starter](https://github.com/opencolibri/colibri-starter):
 [Castor](https://castor.jolicode.com) installs Sylius-Standard, its Docker stack (FrankenPHP, PostgreSQL, HTTPS
 router), the assets and the fixtures, then hands you the tasks to shape your store.
 
@@ -14,7 +14,7 @@ router), the assets and the fixtures, then hands you the tasks to shape your sto
 ## 🚀 Create your project
 
 ```shell
-git clone --depth=1 https://github.com/open-colibri/starter-skeleton.git my-shop
+git clone --depth=1 https://github.com/opencolibri/starter-skeleton.git my-shop
 cd my-shop
 rm -rf .git && git init
 
@@ -55,7 +55,7 @@ castor sylius:init --no-interaction \
 | File                    | Role                                                                    |
 |-------------------------|-------------------------------------------------------------------------|
 | `castor.php`            | Your stack: Castor context, and the services `sylius:init` registers    |
-| `castor.composer.json`  | The Castor plugins of the project (the `open-colibri/starter-*` packages)   |
+| `castor.composer.json`  | The Castor plugins of the project (the `opencolibri/starter-*` packages)   |
 | `.castor/tasks/init.php`| The `sylius:init` task, removed once the project is created             |
 | `.castor/tasks/qa.php`  | `castor qa`: audit, linters, ECS, PHPStan, PHPUnit (and Behat)          |
 | `.github.dist/`         | CI of the project: quality checks, Docker build cache, Dependabot       |
@@ -66,7 +66,7 @@ castor sylius:init --no-interaction \
 
 The `.github/` workflow of this repository creates a project with `castor sylius:init` and runs its quality checks.
 The tasks themselves (installer, themes, plugins…) live in
-[open-colibri/colibri-starter](https://github.com/open-colibri/colibri-starter).
+[opencolibri/colibri-starter](https://github.com/opencolibri/colibri-starter).
 
 ## License
 
