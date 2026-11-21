@@ -1,11 +1,21 @@
 {
     "require": {
         "opencolibri/starter-core": "@dev",
+        "opencolibri/starter-dataset-builder": "@dev",
         "opencolibri/starter-datasets": "@dev",
-        "opencolibri/starter-import": "@dev",
+        "opencolibri/starter-fixtures": "@dev",
         "opencolibri/starter-menu": "@dev",
         "opencolibri/starter-plugins": "@dev",
         "opencolibri/starter-themes": "@dev",
         "opencolibri/starter-upsun": "@dev"
+    },
+    "config": {
+        "audit": {
+            "ignore": {
+                "PKSA-yd1s-kk7g-k2j3": "symfony/http-client is pinned to the version bundled with Castor 1.9.1 (v8.1.10); remove once Castor bundles a fixed version.",
+                "PKSA-gfw6-4rnd-4533": "symfony/http-client is pinned to the version bundled with Castor 1.9.1 (v8.1.10); remove once Castor bundles a fixed version.",
+                "PKSA-nktx-f1n1-b4yd": "symfony/yaml is pinned to the version bundled with Castor 1.9.1 (v8.1.10); remove once Castor bundles a fixed version."
+            }
+        }
     }
 }
