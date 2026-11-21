@@ -43,10 +43,11 @@ The Sylius application lives in [`app/`](app/), the stack is described in [`cast
 | `castor sylius:remove <plugin>…`             | Remove Sylius plugins                            |
 | `castor sylius:theme:setup <theme>`          | Switch the storefront theme                      |
 | `castor sylius:menu:remove <item>…`          | Hide admin menu items                            |
-| `castor sylius:import:*`                     | Import a catalog (AI generated or from a site)   |
+| `castor sylius:dataset:load <dataset>`       | Load a ready-made catalog, images included       |
+| `castor sylius:dataset:build`                | Build a catalog with AI, or from a website       |
 | `castor sylius:upsun:check`                  | Check the Upsun deployment configuration         |
 
-See the [Colibri Starter documentation](https://opencolibri.github.io/starter/docs/)
+See the [Colibri Starter documentation](https://starter.opencolibri.org/docs/)
 for every option.
 
 ## Quality
