@@ -24,7 +24,10 @@ castor sylius:init
 > On GitHub, **Use this template** gives you a fresh repository without cloning the history.
 
 `castor sylius:init` asks a few questions (application name, PHP version, domain, database, theme…), then
-builds and starts everything. Once done, it removes the skeleton-only files: this README is
+builds and starts everything, then sets up the [dev-kit](https://starter.opencolibri.org/docs/dev-kit/):
+`starter.yaml`, the manifest of your store (edit it and run `castor dev-kit:apply`), and its admin in `dev-kit/`,
+served on `https://dev-kit.<your domain>/` to shape your store from the browser.
+Once done, it removes the skeleton-only files: this README is
 replaced by the one of your project, and `.github.dist/` becomes your CI.
 
 Every question can be answered upfront, for an unattended install:

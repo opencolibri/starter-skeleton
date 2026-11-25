@@ -26,6 +26,10 @@ castor list                               # every task
 
 ## Prefer the Colibri Starter tasks
 
+`starter.yaml` holds the wanted state of the shop (name, dataset, theme and header, locales, currencies, plugins):
+to change one of them, edit it and run `castor dev-kit:apply` (`--dry-run` shows the plan first). Remove a setting
+to leave it as it is.
+
 To add or remove a plugin or a theme, or hide admin menu items, use the `castor sylius:*` tasks instead of
 editing the application by hand: they install, configure, migrate and clean up in one deterministic step.
 `castor list sylius` lists them.

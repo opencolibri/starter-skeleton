@@ -37,6 +37,28 @@ The Sylius application lives in [`app/`](app/), the stack is described in [`cast
 
 ## Shape your store
 
+[`starter.yaml`](starter.yaml) holds the shop you want: its name, catalog, theme and header, locales, currencies and
+plugins. Edit it, then let the dev-kit change only what differs:
+
+```shell
+castor dev-kit:apply --dry-run   # show the plan, with the cost of each step
+castor dev-kit:apply             # run it
+castor dev-kit:status            # what the shop runs now
+castor dev-kit:history           # every state an apply brought the shop to, and the way back
+```
+
+The [dev-kit admin](https://starter.opencolibri.org/docs/dev-kit/#the-admin) does the same from your browser: it lives
+in [`dev-kit/`](dev-kit/), runs with the stack on `https://dev-kit.<your domain>/` and calls the tasks through
+castor-api, started on the host:
+
+```shell
+castor api:serve-development     # castor-api, on http://127.0.0.1:8080
+```
+
+Once your store is launched, remove the `dev-kit` service from [`castor.php`](castor.php) and the `dev-kit/` directory.
+
+Or one task at a time:
+
 | Task                                         | Description                                      |
 |----------------------------------------------|--------------------------------------------------|
 | `castor sylius:add <plugin>…`                | Install Sylius plugins (CMS, invoicing, refund…) |

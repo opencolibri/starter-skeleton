@@ -1,6 +1,9 @@
 # Castor
 /.castor/vendor/
 /.castor.stub.php
+/.castor/api/
+/.castor/import/var/
+/.castor/import/exports/
 
 # Docker (compose.yaml is yours: commit it)
 /compose.generated.yaml

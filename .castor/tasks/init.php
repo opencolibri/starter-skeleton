@@ -96,11 +96,17 @@ function finalize(): void
 
     $fs->remove([$root . '/LICENSE', __FILE__]);
 
+    // The dev-kit: starter.yaml from what the shop runs now, and its admin (a Symfony service in dev-kit/).
+    io()->section('Setting up the dev-kit');
+    run(['castor', 'dev-kit:init', '--no-interaction'], context: context()->withAllowFailure());
+
     io()->success('Your Sylius project is ready!');
 
     io()->listing([
         '<info>castor docker:about</info>: the URLs of your project (admin: <comment>/admin</comment>, login <comment>sylius</comment> / <comment>sylius</comment>)',
-        '<info>castor sylius:add</info>, <info>castor sylius:theme:setup</info>, <info>castor sylius:menu:remove</info>…: shape your store',
+        '<info>starter.yaml</info> then <info>castor dev-kit:apply</info>: shape your store (theme, catalog, locales, currencies, plugins) in one place',
+        '<info>castor api:serve-development</info>, then <comment>https://dev-kit.{your domain}/</comment>: the same from your browser, with the dev-kit admin',
+        '<info>castor sylius:add</info>, <info>castor sylius:theme:setup</info>, <info>castor sylius:menu:remove</info>…: or one task at a time',
         '<info>castor qa</info>: run the quality checks',
         '<info>castor list</info>: every available task',
     ]);

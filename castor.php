@@ -8,6 +8,8 @@ use Castor\Context;
 use function Castor\import;
 
 import(__DIR__ . '/.castor/tasks');
+// castor-api: runs the #[AsApi] tasks over HTTP, for the dev-kit admin (castor api:serve-development).
+import('composer://jeromegxj/castor-api');
 
 #[AsContext(default: true)]
 function default_context(): Context
